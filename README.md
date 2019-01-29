@@ -114,16 +114,16 @@ form = Form(this, main_activity_form_container, fields)
 Then we define the function will be called when the form is verified 
 
 ```kotlin
-        form.onValidationFunction = ::login
+form.onValidationFunction = ::login
 ```
 
 Note : The function must be UNIT and have no args
 
 Next , we define the function . 
 ```kotlin
-  private fun login(){
-        toast(form.data.toString())
-    }
+private fun login(){
+    toast(form.data.toString())
+}
 ```
 
 The function just toast the data when the form verified , and here you will edit the function to do what ever you want
@@ -134,3 +134,26 @@ var email = form.data["email"]
 ```
 
 ## Result 
+
+First photo shows the verification errors  
+
+
+![screenshot1](/screenshots/1.png)
+
+
+
+Second photo shows the spinner list  
+
+
+![screenshot2](/screenshots/2.png)
+
+
+
+Third photo shows the data of the form as output of the function `login` which only called when all the fields are verified    
+
+
+![screenshot3](/screenshots/3.png)  
+
+
+
+This example can be found in `example` folder , just open it with android studio and run it :)
