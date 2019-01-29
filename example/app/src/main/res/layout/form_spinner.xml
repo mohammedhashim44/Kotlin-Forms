@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/form_checkbox_row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+
+    <TextView
+        android:id="@+id/form_spinner_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+
+        android:text="Title"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="14sp"
+        android:visibility="visible" />
+
+
+
+
+    <Spinner
+        android:id="@+id/form_spinner_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
